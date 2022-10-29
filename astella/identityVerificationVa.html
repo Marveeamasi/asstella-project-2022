@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>asstella identity verification page VA</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel='stylesheet'  href='identityVerificationVa.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body>
+
+    <div class="cont">
+        <div class="a">
+            <img class="bg" src="img/img11.jpg" alt="image">
+            <div class="imgCov"></div>
+            <img class="logo" src="img/purpleLogo.jpg" alt="logo">
+
+        </div>
+        <center class="b">
+            <h1>identity Verification</h1>
+            <form action="">
+                <div class="text">Name*</div>
+                <div  class="inputCont "><input type="text"></div>
+                <div class="text">Means of Identification*</div>
+             <div  class="inputCont half">
+                <input id="idCardi" type="file" hidden>
+                <label for="idCardi">
+                    <input type="text" placeholder="Front">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                </label>
+             </div>
+                <div  class="inputCont half">
+                    <input id="idCardii" type="file" hidden>
+                    <label for="idCardii">
+                        <input type="text" placeholder="Back">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </label>
+            </div>
+            <div class="text">Payment Information*</div>
+            <div class="inputCont">
+                <input type="text" placeholder="Card Number" >
+                <img class="visa" src="img/visatrans.png" alt="visa">
+            </div>
+            <div class="inputCont">
+                <input type="text" placeholder="Card Holder Name" >
+                <i class="fa fa-user"></i>
+            </div>
+            <div class="inputCont half">
+               <input type="date"  id="expiryDate" hidden>
+               <label for="expiryDate">
+                 <input type="text" placeholder="Expiry Date" >
+                 <i class="fa-solid fa-calendar-days"></i>
+               </label>
+            </div>
+            <div class="inputCont half">
+                <input type="text" placeholder="CVV Code" >
+                <i class="fa-solid fa-exclamation"></i>
+            </div>
+            <div class="text">Skills*</div>
+            <div class="inputCont">
+                <input type="radio"  id="skills" hidden>
+               <label for="skills">
+                 <input type="text" placeholder="Choose Area  of Specialization" >
+                 <i class="fa-solid fa-chevron-down"></i>
+                </label>
+            </div>
+            <div class="text">Preferences*</div>
+            <div class="inputCont"><input type="text"  ></div>
+            <button>SUBMIT</button>
+            </form>
+        </center>
+
+    </div>
+    
+
+
+    <script></script>
+</body>
+</html>

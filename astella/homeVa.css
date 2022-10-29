@@ -1,0 +1,1856 @@
+/*    ....... GLOBAL .......     */
+
+*{
+    text-decoration: none;
+    list-style: none;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    width: 100vw;
+   
+}
+
+.homeVaCont{
+    display: flex;
+    flex-direction: column;
+     width: 100vw;  
+ position: relative;
+ background: #FFFFFF;
+ 
+ }
+
+
+
+ section,header{
+    margin-bottom: 100px;
+ }
+
+/*    ....... NAVBAR.......     */
+
+
+
+nav.homeVaNav{
+    margin:0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+background: rgba(255, 255, 255, 0.59);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.7px);
+-webkit-backdrop-filter: blur(7.7px); z-index: 1111;
+
+}
+
+nav.homeVaNav img{
+    flex: 1;
+    width: 176px;
+    height: 24px;
+    
+    margin: 0 10px;
+   
+}
+
+nav.homeVaNav ul{
+    margin: 0 10px;
+    flex: 8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav.homeVaNav ul li{
+    margin: 0;
+    padding: 0;
+}
+
+nav.homeVaNav ul li a{
+width: 67px;
+height: 23px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+color: rgba(0, 0, 0, 0.55);
+}
+
+nav.homeVaNav .homeVaNavIII{
+    flex: 1;
+    margin: 0 10px;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.homeVaNav .homeVaNavIII > i{
+    color: rgba(0, 0, 0, 0.57);
+    font-size: 30px;
+}
+
+.menubar{
+    flex: 1;
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+
+.menubar > i{
+    color: rgba(0, 0, 0, 0.57);
+    font-size: 30px;
+}
+
+
+/*    ....... SIDEBAR.......     */
+
+.sidebar{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 95vh;
+    position: fixed;
+    top: 0;
+
+    z-index: 1111;
+background: rgba(255, 255, 255, 0.77);
+border-radius:0 0 0 16px;
+backdrop-filter: blur(7px);
+-webkit-backdrop-filter: blur(7px);
+box-shadow: 0 0 7px rgba(0, 0, 0, 0.55);
+right: 0;
+}
+
+.sidebar > i{
+    align-self: flex-start;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.57);
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    left: 85%;
+}
+
+.sidebar .icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+width: 50%;
+margin: 15px;
+
+}
+
+.sidebar .icon i{
+    color: rgba(0, 0, 0, 0.57);
+    font-size: 30px;
+    
+}
+
+.sidebar .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+margin: 15px;
+}
+
+.sidebar .menu a{
+    margin: 15px;
+   align-self: flex-start;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+color: rgba(0, 0, 0, 0.55);
+}
+
+
+
+
+
+
+/*    ....... HERO......     */
+
+
+header.homeVaHero{
+width: 100vw;
+height: 100%;
+background: linear-gradient(269.74deg, #4A1F3D 0.12%, #6B2C57 78.21%, #6B2C57 108.32%);
+background-blend-mode: darken;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+flex-wrap: wrap;
+overflow-x: hidden;
+}
+
+.homeVaHeroI{
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.homeVaHeroI h1{
+    margin: 10px;
+    flex: 1;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 46px;
+
+color: #FFFFFF;
+
+}
+
+.homeVaHeroI h3{
+    flex: 1;
+    width: 424px;
+height: 30px;
+
+margin: 10px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+
+color: #FFFFFF;
+}
+
+.inputCont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.input{
+    width: 512px;
+height: 58px;
+display: flex;
+    justify-content: center;
+    align-items: center;
+background: #FFFFFF;
+border-radius: 10px 0px 0px 10px;
+}
+
+.input > i{
+    color: #000000;
+    flex: 2;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.input input{
+flex: 6;
+height: 100%;
+padding:10px;
+border: none;
+}
+
+.input input::placeholder{
+    width: 201px;
+height: 24px;
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+
+color: #4A1F3D;
+
+}
+
+.inputBtn{
+    width: 158px;
+height: 58px;
+
+
+background: #B7ABD3;
+
+
+border-radius: 0px 10px 10px 0px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+border: none;
+color: #FFFFFF;
+
+}
+
+.homeVaHeroI > button{
+width: 314px;
+height: 58px;
+border: none;
+background: #000000;
+border-radius: 15px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+color: #FFFFFF;
+margin: 10px;
+opacity: .8;
+}
+
+
+
+.homeVaHeroIICont{
+    flex: 1;
+    width: 100%;
+height: 612px;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.homeVaHeroII{
+    width: 500px;
+height: 612px;
+}
+
+.homeVaHeroIICov{
+    width: 100%;
+height: 612px;
+background: linear-gradient(269.74deg, #4A1F3D 0.12%, #6B2C57 78.21%, #6B2C57 108.32%);
+    position: absolute;
+    opacity: 0.5;
+}
+
+.homeVaHeroIII{
+    
+    position: absolute;
+    width: 320px;
+    height: 58px;
+  bottom: 20px;
+    border: none;
+    background: #000000;
+    border-radius: 15px;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+color: #FFFFFF;
+
+}
+
+
+
+
+/*   .......... BRIEF ..............*/
+
+section.homeVaBrief{
+width: 100vw;
+height: 100%;
+flex-direction: column;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+section.homeVaBrief > h3{
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+color: #6B2C57;
+margin: 10px;
+}
+
+section.homeVaBrief > h1{
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+color: #6B2C57;
+margin: 10px;
+}
+
+section.homeVaBrief > h1 > span{
+    color: rgba(183, 171, 211, 0.53);
+}
+
+section.homeVaBrief .II{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+section.homeVaBrief .II .IIa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+width: 500px;
+}
+
+section.homeVaBrief .II .IIa .icon{
+    flex: 1;
+    background: rgba(183, 171, 211, 0.53);
+border-radius: 10% 30% 60% 80% ;
+margin: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+padding: 50px;
+
+
+}
+
+section.homeVaBrief .II .IIa .icon i{
+    font-size: 40px;
+color: #6B2C57;
+position: absolute;
+}
+
+
+
+section.homeVaBrief .II .IIa h3{
+    flex: 1;
+    margin: 10px;
+   
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 29px;
+
+
+
+color: #000000;
+
+
+}
+
+section.homeVaBrief .II .IIa p{
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+   width:100%;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+align-self: start;
+color: #000000;
+
+}
+
+section.homeVaBrief button{
+    width: 314px;
+height: 58px;
+background: #FFFFFF;
+border: 1px solid #000000;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+margin: 10px;
+
+color: #6B2C57;
+
+
+
+}
+
+
+/*   .......... LEARN MORE ..............*/
+
+
+section.homeVaLearnmore{
+    width: 100vw;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+background: linear-gradient(269.74deg, #4A1F3D 0.12%, #6B2C57 78.21%, #6B2C57 108.32%);
+background-blend-mode: darken;
+}
+
+section.homeVaLearnmore .I{
+display: flex;
+flex-direction: column;
+flex: 1;
+align-items: flex-start;
+
+}
+
+section.homeVaLearnmore .I h3{
+
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+
+
+color: #FFFFFF;
+margin: 10px;
+
+}
+
+section.homeVaLearnmore .I h1{
+ 
+  
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    
+
+    margin: 10px;
+    
+    color: #FFFFFF;
+    
+}
+
+section.homeVaLearnmore .I p{
+  
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+  
+    margin: 10px 30px 10px 10px;
+    
+    color: #FFFFFF;
+    
+    
+}
+
+section.homeVaLearnmore .I button{
+    width: 314px;
+    height: 58px;
+   
+    
+    background: #000000;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+border-radius: 10px;
+border: none;
+margin: 10px;
+color: #FFFFFF;
+    
+}
+
+section.homeVaLearnmore .II{
+    flex: 1;
+    width: 100%;
+    height: 548px;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section.homeVaLearnmore .II img{
+    width: 100%;
+    height: 548px;
+    
+
+}
+
+section.homeVaLearnmore .II .imgCov{
+    width: 100%;
+    height: 548px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.59);
+}
+
+
+
+/*   .......... WE OFFER ..............*/
+
+
+
+section.homeVaWeoffer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100vw;
+}
+
+section.homeVaWeoffer h1{
+    width: 258px;
+height: 39px;
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 46px;
+margin: 10%;
+color: #6B2C57;
+
+}
+
+section.homeVaWeoffer .I{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+section.homeVaWeoffer .I .Ia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 300px;
+ 
+}
+
+section.homeVaWeoffer .I .Ia i{
+    font-size: 50px;
+    color:#6B2C57;
+    margin: 10px;
+    opacity: .7;
+}
+
+section.homeVaWeoffer .I .Ia h3{
+    
+   margin: 10px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+   
+    
+    
+    color: #000000;
+    
+}
+
+section.homeVaWeoffer .I .Ia p{
+   
+margin: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+text-align: center;
+color: #000000;
+
+
+}
+
+section.homeVaWeoffer .II{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 300px;
+    
+}
+
+section.homeVaWeoffer .II i{
+    font-size: 50px;
+    color: #6B2C57;
+    margin: 10px;
+    opacity: .7;
+}
+
+section.homeVaWeoffer .II h3{
+    margin: 10px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+   
+    
+    
+    color: #000000;
+    
+}
+
+section.homeVaWeoffer .II p{
+    margin: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+text-align: center;
+color: #000000;
+
+}
+
+section.homeVaWeoffer .II button{
+    width: 314px;
+height: 58px;
+border: none;
+border-radius: 10px;
+background: #6B2C57;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+margin: 10px;
+
+color: #FFFFFF;
+
+
+}
+
+
+/*   .......... TESTIMONIALS ..............*/
+
+
+
+section.homeVaTestimonials{
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+section.homeVaTestimonials .i{
+    display: flex;
+    flex-direction: column;
+width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section.homeVaTestimonials .i .a{
+    display: flex;
+flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    
+}
+
+section.homeVaTestimonials .i .a h3{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 34px;
+margin: 10px;
+color: #B7ABD3;
+
+}
+
+section.homeVaTestimonials .i .a h1{
+    width: 506px;
+height: 178px;width: 506px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 46px;
+margin: 10px;
+color: #6B2C57;
+
+}
+
+section.homeVaTestimonials .i .b{
+    width: 693px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+height: 570px;
+position: relative;
+margin: 10px;
+}
+
+section.homeVaTestimonials .i .b img{
+    width: 693px;
+height: 570px;
+
+}
+
+section.homeVaTestimonials .i .b .imgCov{
+    width: 693px;
+    height: 570px;
+background: rgba(107, 44, 87, 0.74);
+position: absolute;
+}
+
+section.homeVaTestimonials .i .b .textCov{
+    width: 693px;
+height: 570px;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+section.homeVaTestimonials .i .b .textCov .icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+section.homeVaTestimonials .i .b .textCov .icon i{
+    font-size: 70px;
+    color: #000000;
+    
+}
+
+section.homeVaTestimonials .i .b .textCov .icon i.fa-solid{
+opacity: .7;
+font-size: 40px;
+margin: 10px;
+}
+
+section.homeVaTestimonials .i .b .textCov p{
+    width: 540px;
+height: 82px;
+
+margin: 10px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+.fa-sharp.fa-solid.fa-quote-left{
+    margin: 10px;
+    color: #000000;
+    font-size: 70px;
+}
+
+section.homeVaTestimonials .i .b .textCov h3{
+    width: 114px;
+    height: 29px;
+ margin: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    
+    
+    text-align: center;
+
+color: #FFFFFF;
+
+}
+
+
+
+section.homeVaTestimonials .i img.a{
+    width: 554px;
+height: 540px;
+}
+
+section.homeVaTestimonials .i .img.b{
+    width: 567px;
+height: 262px;
+}
+
+
+/*   .......... HOW IT WORKS ..............*/
+
+
+
+.howitworks{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width:100vw;
+    height: 1200px;
+}
+
+.howitworks .cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+   margin-bottom: 200px;
+height: 548px;
+
+
+background: linear-gradient(269.74deg, #4A1F3D 0.12%, #6B2C57 78.21%, #6B2C57 108.32%);
+background-blend-mode: darken;
+}
+
+.howitworks .cont > img{
+    width: 570px;
+height: 548px;
+flex: 1;
+}
+
+.howitworks .cont .I{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  flex: 3;
+  padding: 0 20px;
+}
+
+.howitworks .cont .I h3{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+
+margin: 10px;
+
+color: #FFFFFF;
+
+
+}
+
+.howitworks .cont .I h1{
+
+
+margin: 10px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 46px;
+
+color: #FFFFFF;
+
+
+}
+
+.howitworks .cont .I p{
+
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+margin: 10px;
+color: #FFFFFF;
+
+}
+
+.howitworks .cont .I a{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 29px;
+margin: 10px;
+
+text-align: center;
+text-decoration-line: underline;
+
+color: #FFFFFF;
+
+
+}
+
+.howitworks .II{
+    width: 90vw;
+  position: absolute;
+ bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.55);
+    background-color: white;
+}
+
+.howitworks .II .a{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.howitworks .II .a h3{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+margin: 20px;
+
+
+color: #6B2C57;
+
+
+}
+
+.howitworks .II .a hr{
+width: 80%;
+border: 1px solid #B7ABD3;
+margin: 20px;
+}
+
+.howitworks .II .a h2{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 29px;
+margin: 20px;
+color: #000000;
+
+}
+
+.howitworks .II .a p{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+margin: 20px;
+color: rgba(0, 0, 0, 0.57);
+
+}
+
+
+/*   .......... PLANS..............*/
+
+
+section.plans{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+
+}
+
+section.plans h2{
+    margin: 10px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 34px;
+text-align: center;
+
+color: #6B2C57;
+
+}
+
+section.plans h1{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 40px;
+text-align: center;
+
+color: #000000;
+
+}
+
+section.plans .I{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+section.plans .I .a{
+    width: 288px;
+height: 520px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background: rgba(183, 171, 211, 0.37);
+box-shadow: 0px 4px 5px #B7ABD3;
+border-radius: 10px;
+margin: 10px;
+}
+
+section.plans .I .a h1{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 40px;
+align-self: flex-start;
+color: #000000;
+margin: 10px;
+}
+
+section.plans .I .a p{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+margin: 10px;
+color: #000000;
+align-self: flex-start;
+}
+
+section.plans .I .a .b{
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+margin: 10px;
+color: #000000;
+align-self: center;
+}
+
+section.plans .I .a .b span{
+    font-size: 45px;
+}
+
+section.plans .I .a .pCont{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section.plans .I .a i{
+    font-size: 35px;
+}
+
+section.plans .I .a .c{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+
+color: #000000;
+
+}
+
+section.plans .I .a button{
+    width: 126px;
+height: 34px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+border: none;
+margin: 10px;
+border-radius: 7px;
+color: #FFFFFF;
+
+background: #6B2C57;
+}
+
+section.plans .I .a p.popular{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+margin: 10px;
+align-self: flex-end;
+color: #6B2C57;
+
+}
+
+section.plans .note{
+    
+width: 634px;
+height: 54px;
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+text-align: center;
+margin: 10px;
+color: rgba(0, 0, 0, 0.57);
+
+
+}
+
+
+/*   .......... CONTACT US..............*/
+
+.contactus{
+display: flex;
+
+align-items: flex-start;
+width: 100vw;
+flex-direction: column;
+
+}
+
+.contactus h3{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+margin: 10px;
+color: #B7ABD3;
+
+}
+
+.contactus h1{
+    width: 440px;
+height: 130px;
+margin: 10px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 46px;
+
+color: #B7ABD3;
+
+}
+
+.contactus h1 span{
+    width: 440px;
+height: 130px;
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 46px;
+
+color: #6B2C57;
+
+}
+
+.contactus form{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactus form .inputsCont{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.contactus form .inputsCont .inputCont{
+    width: 380px;
+height: 59px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin: 10px;
+background: rgba(183, 171, 211, 0.53);
+}
+
+.contactus form .inputsCont .inputCont i{
+    color: rgba(0, 0, 0, 0.57);
+    font-size: 30px;
+    margin: 10px;
+    flex: 1;
+}
+
+.contactus form .inputsCont .inputCont > input{
+    border: none;
+    background: transparent;
+    flex: 3;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contactus form .inputsCont .inputCont input::placeholder{
+    width: 182px;
+height: 27.04px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 25px;
+
+color: rgba(0, 0, 0, 0.57);
+
+
+}
+
+.contactus form .inputsCont .inputCont.flexii{
+    width: 795px;
+}
+
+.contactus form .checkCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+margin: 10px;
+}
+
+.contactus form .checkCont > input{
+    border: 4px solid #000000;
+    margin: 10px;
+}
+
+.contactus form .checkCont input:checked{
+    background-color: #6B2C57;
+}
+
+.contactus form .checkCont h4{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 25px;
+margin: 10px;
+color: #000000;
+
+}
+
+.contactus form button{
+    width: 200px;
+height: 58px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+color: #FFFFFF;
+background: #6B2C57;
+border: none;
+border-radius: 7px;
+margin: 10px;
+}
+
+/*   .......... FOOTER ..............*/
+
+
+
+footer{
+    width: 100vw;
+   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    
+    background: #6B2C57;
+}
+
+footer img{
+    width: 219px;
+    height: 41px;
+    margin: 10px;
+}
+
+footer .cont{
+    display: flex;
+   width: 100vw;
+  flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   margin: 10px;
+}
+
+footer .cont .i{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+}
+
+footer .cont .i h3{
+    margin: 10px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 29px;
+align-self: flex-start;
+color: #FFFFFF;
+
+
+}
+
+footer .cont .i p{
+    align-self: flex-start;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+margin: 10px;
+color: #FFFFFF;
+
+}
+
+footer p{
+    font-family: 'Square Peg';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+margin: 10px;
+color: #FFFFFF;
+
+}
+
+
+/* 333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 */
+
+
+
+@media screen and (max-width: 960px) {
+    .menubar{
+        display: flex;
+    }
+
+    nav.homeVaNav ul{
+        display: none;
+    }
+
+  .sidebar.toggle{
+    display: flex;
+  }
+  
+.sidebar .icon{
+    display: none;
+}
+
+
+
+header.homeVaHero{
+  flex-direction: column;
+    }
+    
+    .homeVaHeroI{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    }
+    
+    .homeVaHeroI h1{
+        margin: 10px;
+        flex: 1;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+
+    color: #FFFFFF;
+    
+    }
+    
+    .homeVaHeroI h3{
+        flex: 1;
+
+    margin: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    
+    color: #FFFFFF;
+    }
+    
+    .inputCont{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+    }
+    
+    .input{
+     height: 50px;
+     width: 300px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    background: #FFFFFF;
+    border-radius: 3px;
+    }
+    
+    .input i.fa-solid.fa-magnifying-glass{
+        font-size: 20px;
+    }
+    
+    .input input{
+        width: 100%;
+    flex: 6;
+    height: 100%;
+    padding:10px;
+    border: none;
+    }
+    
+    .input input::placeholder{
+      
+    
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+ 
+    
+    color: #4A1F3D;
+    
+    }
+    
+    .inputBtn{
+    display: none;
+    
+    }
+    
+    .homeVaHeroI > button{
+    width: 250px;
+    height: 50px;
+    border: none;
+    background: #000000;
+    border-radius: 15px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    
+    color: #FFFFFF;
+    margin: 10px;
+    opacity: .8;
+    }
+    
+    
+    
+    .homeVaHeroIICont{
+        flex: 1;
+        width: 100%;
+    height: 612px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    
+    .homeVaHeroII{
+        width: 100%;
+    height: 612px;
+    }
+    
+    .homeVaHeroIICov{
+        width: 100%;
+    height: 612px;
+    background: linear-gradient(269.74deg, #4A1F3D 0.12%, #6B2C57 78.21%, #6B2C57 108.32%);
+        position: absolute;
+        opacity: 0.5;
+    }
+    
+    .homeVaHeroIII{
+        
+        
+        width: 300px;
+        height: 50px;
+
+    font-size: 30px;
+    
+    }
+
+    section.homeVaLearnmore{
+        flex-direction: column;
+    }
+
+
+    section.homeVaTestimonials{
+        flex-wrap: wrap;
+    }
+
+.howitworks{
+    flex-direction: column;
+    height: 100%;
+}
+
+.howitworks .cont{
+height: 100%;
+flex-direction: column;
+margin-bottom: 10px;
+
+}
+
+.howitworks .II{
+    position: relative;
+    bottom: auto;
+    flex-direction: column;
+    box-shadow: none;
+}
+
+
+.plans p.note{
+    width: 100%;
+    height: 100%;
+}
+
+
+.contactus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+    height: 100%;
+    }
+    
+    .contactus h3{
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    margin: 10px;
+    color: #B7ABD3;
+    
+    }
+    
+    .contactus h1{
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    
+    color: #B7ABD3;
+    
+    }
+    
+    .contactus h1 span{
+   width: 100%;
+   height: 100%;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    
+    color: #6B2C57;
+    
+    }
+    
+    .contactus form{
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .contactus form .inputsCont{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+
+    }
+    
+    .contactus form .inputsCont .inputCont{
+        width: 200px;
+    height: 59px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    background: rgba(183, 171, 211, 0.53);
+    }
+    
+    .contactus form .inputsCont .inputCont i{
+        color: rgba(0, 0, 0, 0.57);
+        font-size: 30px;
+        margin: 10px;
+        flex: 1;
+    }
+    
+    .contactus form .inputsCont .inputCont > input{
+        border: none;
+        background: transparent;
+        flex: 3;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .contactus form .inputsCont .inputCont input::placeholder{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    
+    color: rgba(0, 0, 0, 0.57);
+    
+    
+    }
+    
+    .contactus form .inputsCont .inputCont.flexii{
+        width: 200px;
+    }
+    
+    .contactus form .checkCont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+    margin: 10px;
+    }
+    
+    .contactus form .checkCont input{
+        border: 2px solid #000000;
+        margin: 10px;
+    }
+    
+    .contactus form .checkCont h4{
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    margin: 10px;
+    color: #000000;
+    
+    }
+    
+    .contactus form button{
+        width: 200px;
+    height: 58px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background: #6B2C57;
+    border: none;
+    border-radius: 7px;
+    margin: 10px;
+    }
+    
+
+
+
+}
+
+
+/* 333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 */
+
+
+
+@media screen and (max-width: 480px) {
+
+    nav.homeVaNav div.homeVaNavIII i{
+        display: none;
+    }
+
+    .sidebar .icon{
+        display: flex;
+    }
+
+
+    section.homeVaLearnmore .I{
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+}
