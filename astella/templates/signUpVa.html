@@ -8,16 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&family=Square+Peg&display=swap" rel="stylesheet">
-    <link rel='stylesheet'  href='static/signUpVa.css'>
+    <link rel='stylesheet'  href='../static/signUpVa.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
 </head>
 <body>
     <div class="cont">
         <div class="a">
-            <img class="bg" src="static/img/img11.jpg" alt="image">
+            <img class="bg" src="../static/img/img11.jpg" alt="image">
             <div class="imgCov"></div>
-            <img class="logo" src="static/img/purpleLogo.jpg" alt="logo">
+            <img class="logo" src="../static/img/purpleLogo.jpg" alt="logo">
 
         </div>
         <center class="b">
@@ -29,26 +29,26 @@
 
                 <div class="halfCont">
                   <div class="i">
-                    <div class="text ">Age*</div>
-                    <input type="number">
+                    <div class="text">Age*</div>
+                    <input type="number" id="age" name="age" >
                   </div>
                      <div class="ii">
                         <div class="text">Gender*</div>
-                    <input type="text">
+                    <input type="text" id="gender" name="gender" >
                      </div>
                     
                 </div>    
                     <div class="text">E-mail*</div>
-                    <input type="email" >
+                    <input type="email" id="email" name="email" >
                     <div class="text">Country*</div>
-                    <input type="text">
+                    <input type="text" id="country" name="country" >
                     <div class="text">State*</div>
-                    <input type="text">
+                    <input type="text" id="state" name="state" >
                     <div class="text">Password*</div>
-                    <input type="password">
+                    <input type="password" id="password" name="password" >
                     <div class="text">Confirm Passsword*</div>
-                    <input type="password">
-                    <p><input class="checkbox" type="checkbox"> By clicking, you agree with the <a href=""> terms and conditions</a></p>
+                    <input type="password" id="confirmPass" >
+                    <p><input class="checkbox" type="checkbox" name="check" id="check" > By clicking, you agree with the <a href=""> terms and conditions</a></p>
                 </div>
 
                 <button>SUBMIT</button>
