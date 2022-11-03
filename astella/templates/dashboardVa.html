@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>asstella dashboard page VA</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel='stylesheet'  href='dashboardVa.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body>
+    <div class="homeVaCont">
+        <nav class="homeVaNav">
+            <img class="homeVaNavI" src="img/purpleLogo.jpg" alt="logo">
+            <ul class="homeVaNavII">
+                <li><a href="">Home</a></li>
+                <li class="active" ><a href="">Dashboard</a></li>
+                <li><a href="">Tasks</a></li>
+                <li><a href="">Plans</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+            <div class="homeVaNavIII">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div class="menubar">
+                <i class="fa-solid fa-bars" onclick="toggle()"></i>
+            </div>
+
+        </nav>
+
+         <div class="sidebar ">
+            <i class="fa-solid fa-x" onclick="toggle()"></i>
+            <div class="icon">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="menu">
+                <a href="">Home</a>
+                <a class="active" href="">Dashboard</a>
+                <a href="">Tasks</a>
+                <a href="">Plans</a>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+            </div>
+         </div>
+
+
+    
+    <div class="cont">
+        <div class="a">
+            <div class="ai">
+                <div class="aix">
+                    <h1 class="aixHi">Hi John<i class="fa-solid fa-handshake"></i></h1>
+                    <h3 class="aixHiii">Lets get started for today</h3>
+                    <button class="aixBtn">Accept a Task</button>
+                </div>
+                <div class="aiy">
+                    <h1 class="aiyHiii">Your Active Payments</h1>
+                    <div class="aiyDiv">
+                        <h1 class="aiyDivHi">#522,200.00</h1>
+                        <h3 class="aiyDivHiii">Your current active payment</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="aii">
+                <label for="search" class="searchText">Search</label>
+                <div class="searchCont">
+                    <i class="fa fa-search"></i>
+                    <input type="text" id="search" placeholder="Find Specific Tasks">
+                    <div class="filter">
+                     ||   Filter <i class="fa fa-filter"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="aiii">
+              <div class="lifeTaskCont">
+                <input type="radio" name="lifeTask" id="lifeTask">
+                <label for="lifeTask">Live Tasks</label>
+              </div>
+              <div class="labelsCont">
+                <i class="fa fa-tag"></i>
+                labels
+              </div>
+            </div>
+            
+            <div class="aiv">
+                <div class="aivCard">
+                    <div class="aivCardProfile">
+                        <div class="aivCardProfileX">
+                            <img src="img/avatar.jpg" alt="avatar" class="aivCardProfileXimg">
+                            <h3 class="aivCardProfileXname">
+                                John Doe
+                            </h3>
+                            <h3 class="aivCardProfileXtitle">Executive</h3>
+                        </div>
+                        <div class="aivCardProfileY">...</div>
+                    </div>
+                    <div class="aivCardTask">
+                        <h3 class="aivTask">Design a multi-layered platform
+                            for my organisation.</h3>
+                        <p class="aivTaskText"></p>    
+                    </div>
+                    <div class="aivCardCheckProgressCont">
+                        <div class="aivCardCheckProgress">Check Progress</div>
+                        <div class="aivCardCheckProgressIcon"><i class="fa fa-arrow-right"></i></div>
+                    </div>
+                
+                   
+                   </div>
+
+                   <div class="aivCard">
+                    <div class="aivCardProfile">
+                        <div class="aivCardProfileX">
+                            <img src="img/avatar.jpg" alt="avatar" class="aivCardProfileXimg">
+                            <h3 class="aivCardProfileXname">
+                                John Doe
+                            </h3>
+                            <h3 class="aivCardProfileXtitle">Executive</h3>
+                        </div>
+                        <div class="aivCardProfileY">...</div>
+                    </div>
+                    <div class="aivCardTask">
+                        <h3 class="aivTask">Design a multi-layered platform
+                            for my organisation.</h3>
+                        <p class="aivTaskText"></p>    
+                    </div>
+                    <div class="aivCardCheckProgressCont">
+                        <div class="aivCardCheckProgress">Check Progress</div>
+                        <div class="aivCardCheckProgressIcon"><i class="fa fa-arrow-right"></i></div>
+                    </div>
+                
+                   
+                   </div>
+
+                   <div class="aivCard">
+                    <div class="aivCardProfile">
+                        <div class="aivCardProfileX">
+                            <img src="img/avatar.jpg" alt="avatar" class="aivCardProfileXimg">
+                            <h3 class="aivCardProfileXname">
+                                John Doe
+                            </h3>
+                            <h3 class="aivCardProfileXtitle">Executive</h3>
+                        </div>
+                        <div class="aivCardProfileY">...</div>
+                    </div>
+                    <div class="aivCardTask">
+                        <h3 class="aivTask">Design a multi-layered platform
+                            for my organisation.</h3>
+                        <p class="aivTaskText"></p>    
+                    </div>
+                    <div class="aivCardCheckProgressCont">
+                        <div class="aivCardCheckProgress">Check Progress</div>
+                        <div class="aivCardCheckProgressIcon"><i class="fa fa-arrow-right"></i></div>
+                    </div>
+                
+                   
+                   </div>
+
+                   <div class="aivCard">
+                    <div class="aivCardProfile">
+                        <div class="aivCardProfileX">
+                            <img src="img/avatar.jpg" alt="avatar" class="aivCardProfileXimg">
+                            <h3 class="aivCardProfileXname">
+                                John Doe
+                            </h3>
+                            <h3 class="aivCardProfileXtitle">Executive</h3>
+                        </div>
+                        <div class="aivCardProfileY">...</div>
+                    </div>
+                    <div class="aivCardTask">
+                        <h3 class="aivTask">Design a multi-layered platform
+                            for my organisation.</h3>
+                        <p class="aivTaskText"></p>    
+                    </div>
+                    <div class="aivCardCheckProgressCont">
+                        <div class="aivCardCheckProgress">Check Progress</div>
+                        <div class="aivCardCheckProgressIcon"><i class="fa fa-arrow-right"></i></div>
+                    </div>
+                
+                   
+                   </div>
+
+                   <div class="aivCard">
+                    <div class="aivCardProfile">
+                        <div class="aivCardProfileX">
+                            <img src="img/avatar.jpg" alt="avatar" class="aivCardProfileXimg">
+                            <h3 class="aivCardProfileXname">
+                                John Doe
+                            </h3>
+                            <h3 class="aivCardProfileXtitle">Executive</h3>
+                        </div>
+                        <div class="aivCardProfileY">...</div>
+                    </div>
+                    <div class="aivCardTask">
+                        <h3 class="aivTask">Design a multi-layered platform
+                            for my organisation.</h3>
+                        <p class="aivTaskText"></p>    
+                    </div>
+                    <div class="aivCardCheckProgressCont">
+                        <div class="aivCardCheckProgress">Check Progress</div>
+                        <div class="aivCardCheckProgressIcon"><i class="fa fa-arrow-right"></i></div>
+                    </div>
+                
+                   
+                   </div>
+
+                   <div class="aivCard">
+                    <div class="aivCardProfile">
+                        <div class="aivCardProfileX">
+                            <img src="img/avatar.jpg" alt="avatar" class="aivCardProfileXimg">
+                            <h3 class="aivCardProfileXname">
+                                John Doe
+                            </h3>
+                            <h3 class="aivCardProfileXtitle">Executive</h3>
+                        </div>
+                        <div class="aivCardProfileY">...</div>
+                    </div>
+                    <div class="aivCardTask">
+                        <h3 class="aivTask">Design a multi-layered platform
+                            for my organisation.</h3>
+                        <p class="aivTaskText"></p>    
+                    </div>
+                    <div class="aivCardCheckProgressCont">
+                        <div class="aivCardCheckProgress">Check Progress</div>
+                        <div class="aivCardCheckProgressIcon"><i class="fa fa-arrow-right"></i></div>
+                    </div>
+                
+                   
+                   </div>
+              
+
+            </div>
+            </div>
+        
+
+        <div class="b">
+            <div class="bi">
+                <div class="biCont">
+                    <img src="img/avatar.jpg" alt="avatar" class="biImg">
+                <h3 class="biName">
+                    John Doe
+                </h3>
+                <h3 class="biTitle">Virtual Assistant</h3>
+                </div>
+            
+                <h3 class="biIcon"><i class="fa fa-bell"></i></h3>
+            </div>
+            
+            <div class="bii">
+                <h3 class="biiUpdate">UPDATES</h3>
+                <p class="biiUpdateText">Gets All Your Updates here</p>
+                <div class="biiCard">
+                    <div class="biiCarda">
+                        <h3 class="biiCardaText">Writing: Send an email to address at 5pm</h3>
+                        <i class="fa fa-bell"></i>
+                    </div>
+                    <p class="biiCardb">1 Assistant Applied</p>
+                    <div class="biiCardc">
+                        <div class="biiCardcDate">Fri, Feb 3 <i class="fa fa-calendar"></i> </div>
+                        <div class="biiCardcBtn">Edit Task</div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="biiCard">
+                    <div class="biiCarda">
+                        <h3 class="biiCardaText">Writing: Send an email to address at 5pm</h3>
+                        <i class="fa fa-bell"></i>
+                    </div>
+                    <p class="biiCardb">1 Assistant Applied</p>
+                    <div class="biiCardc">
+                        <div class="biiCardcDate">Fri, Feb 3 <i class="fa fa-calendar"></i> </div>
+                        <div class="biiCardcBtn">Edit Task</div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="biiCard">
+                    <div class="biiCarda">
+                        <h3 class="biiCardaText">Writing: Send an email to address at 5pm</h3>
+                        <i class="fa fa-bell"></i>
+                    </div>
+                    <p class="biiCardb">1 Assistant Applied</p>
+                    <div class="biiCardc">
+                        <div class="biiCardcDate">Fri, Feb 3 <i class="fa fa-calendar"></i> </div>
+                        <div class="biiCardcBtn">Edit Task</div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="show">
+                    <p class="showText">Show More</p>
+                    <i class="fa fa-arrow-down"></i>
+                </div>
+            </div>
+            <div class="biii">
+                <h1 class="inviteHeading">Invite More People</h1>
+                <div class="inviteInputCont">
+                    <input type="text" placeholder="Enter Email" class="inviteInput" type="email">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <div class="socialIconCont">
+                    <i class="fa-brands fa-snapchat"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-whatsapp"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-pinterest"></i>
+
+                </div>
+                <h1 class="biiiHi">Pending Applications</h1>
+                <div class="biiiImgCont">
+                    <img src="img/gray.webp" alt="appImg" class="biiiImg">
+                    <img src="img/gray.webp" alt="appImg" class="biiiImg">
+                    <img src="img/gray.webp" alt="appImg" class="biiiImg">
+                
+                
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+         <script>
+            var sidebar = document.querySelector(".sidebar");
+    
+    function toggle() {
+       let x = sidebar.classList;
+       x.toggle("toggle");
+    }
+    
+        </script>
+    
+</body>
+</html>
