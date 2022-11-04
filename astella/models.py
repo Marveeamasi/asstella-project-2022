@@ -17,8 +17,8 @@ class User(db.Model, UserMixin):
 class Verify(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     Name = db.Column(db.String(150))
-    cardFront = db.Column(db.Integer())
-    cardBack = db.Column(db.Integer())
+    cardFront = db.Column(db.LargeBinary)
+    cardBack = db.Column(db.LargeBinary)
 #    Payment information ( card number_ visa)
     CardHolderName = db.Column(db.Integer())
     ExpiryDate = db.Column(db.String(150))

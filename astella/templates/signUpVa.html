@@ -18,7 +18,23 @@
             <img class="bg" src="../static/img/img11.jpg" alt="image">
             <div class="imgCov"></div>
             <img class="logo" src="../static/img/purpleLogo.jpg" alt="logo">
-
+       {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %} {% for category, message in messages %} {% if category ==
+    'error' %}
+    <div class="alert alert-danger alter-dismissable fade show" role="alert">
+      {{ message }}
+      <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {% else %}
+    <div class="alert alert-success alter-dismissable fade show" role="alert">
+      {{ message }}
+      <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {% endif %}{% endfor %} {% endif %} {% endwith %}
         </div>
         <center class="b">
             <h1><span class="x">Sign Up</span><span class="y">Sign In</span></h1>
@@ -45,9 +61,9 @@
                     <div class="text">State*</div>
                     <input type="text" id="state" name="state" >
                     <div class="text">Password*</div>
-                    <input type="password" id="password" name="password" >
+                    <input type="password" id="password" name="password1" >
                     <div class="text">Confirm Passsword*</div>
-                    <input type="password" id="confirmPass" >
+                    <input type="password" id="confirmPass" name="password2" placeholder="make sure passwords are same" >
                     <p><input class="checkbox" type="checkbox" name="check" id="check" > By clicking, you agree with the <a href=""> terms and conditions</a></p>
                 </div>
 
