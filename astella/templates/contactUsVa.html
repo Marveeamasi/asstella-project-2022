@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>asstella contact us page VA</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel='stylesheet'  href='contactUsVa.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body>
+    <div class="homeVaCont">
+        <nav class="homeVaNav">
+            <img class="homeVaNavI" src="img/purpleLogo.jpg" alt="logo">
+            <ul class="homeVaNavII">
+                <li><a href="">Home</a></li>
+                <li  ><a href="">Dashboard</a></li>
+                <li ><a href="">Tasks</a></li>
+                <li><a href="">Plans</a></li>
+                <li><a href="">About Us</a></li>
+                <li class="active"><a href="">Contact Us</a></li>
+            </ul>
+            <div class="homeVaNavIII">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div class="menubar">
+                <i class="fa-solid fa-bars" onclick="toggle()"></i>
+            </div>
+
+        </nav>
+
+         <div class="sidebar ">
+            <i class="fa-solid fa-x" onclick="toggle()"></i>
+            <div class="icon">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="menu">
+                <a href="">Home</a>
+                <a  href="">Dashboard</a>
+                <a href="" >Tasks</a>
+                <a href="">Plans</a>
+                <a href="">About Us</a>
+                <a href="" class="active">Contact Us</a>
+            </div>
+         </div>
+
+<div class="cont">
+    <div class="first">
+        <h1>Contact Us</h1>
+        <h3>Our Friendly Team Would Love To Hear From You</h3>
+        <form action="">
+            <div class="div half">   <div class="text">First Name*</div>
+            <input type="text" id="firstName" name="firstName"></div>
+            <div class="div half"><div class="text">Last Name*</div>
+            <input type="text" id="lastName" name="lastName"></div>
+            <div class="div"><div class="text">E-Mail*</div>
+            <input type="email" id="email" name="email" placeholder="you@company.com"></div>
+            <div class="div">
+                <div class="text">Phone Number*</div>
+                <input type="number" id="phone" name="phone"></div>
+            <div class="div long"><div class="text">Message*</div>
+            <input type="text" id="message" name="message"></div>
+<button>SEND MESSAGE</button>
+        </form>
+    </div>
+    <div class="sec">
+        <h1>Visit Our Office</h1>
+        <p>Find us At These Locations</p>
+        <div class="nextCont">
+            <div class="nexti">
+                <h3>Melbourne</h3>
+                <h4>120 Seekers Street
+                    Melbourne Vlc 200 AU</h4>
+            </div>
+            <div class="nexti">
+                <h3>Melbourne</h3>
+                <h4>120 Seekers Street
+                    Melbourne Vlc 200 AU</h4>
+            </div>
+            <div class="nexti">
+                <h3>Melbourne</h3>
+                <h4>120 Seekers Street
+                    Melbourne Vlc 200 AU</h4>
+            </div>
+            <div class="nexti">
+                <h3>Melbourne</h3>
+                <h4>120 Seekers Street
+                    Melbourne Vlc 200 AU</h4>
+            </div>
+            <div class="nexti">
+                <h3>Melbourne</h3>
+                <h4>120 Seekers Street
+                    Melbourne Vlc 200 AU</h4>
+            </div>
+            <div class="nexti">
+                <h3>Melbourne</h3>
+                <h4>120 Seekers Street
+                    Melbourne Vlc 200 AU</h4>
+            </div>
+            <div class="nextii">
+                <h3> <span> Visit Us</span>
+                Visit Our Office HQ</h3>
+                <h4>No 5 firthi Street,UK</h4>
+            </div>
+            <div class="nextii">
+                <h3><span>Chat With Us</span>
+                 Visit Our Office HQ</h3>
+                 <h4>No 5 firthi Street,UK</h4>
+             </div>
+             <div class="nextii">
+                <h3><span>Call Us</span>
+                 Reach Out To Us</h3>
+                 <h4>No 5 firthi Street,UK</h4>
+             </div>
+             <div class="nextii">
+                <h3><span>Visit Us</span>
+                 Visit Our Office HQ</h3>
+                 <h4>No 5 firthi Street,UK</h4>
+             </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+    </div>
+         <script>
+            var sidebar = document.querySelector(".sidebar");
+    
+    function toggle() {
+       let x = sidebar.classList;
+       x.toggle("toggle");
+    }
+    
+        </script>
+</body>
+</html>
