@@ -1,0 +1,341 @@
+/*    ....... GLOBAL .......     */
+
+*{
+    text-decoration: none;
+    list-style: none;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    width: 100vw;
+   
+}
+
+.homeVaCont{
+    display: flex;
+    flex-direction: column;
+     width: 100vw;  
+ position: relative;
+ background: #FFFFFF;
+ 
+ }
+
+
+
+
+/*    ....... NAVBAR.......     */
+
+
+
+nav.homeVaNav{
+    margin:0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+background: rgba(255, 255, 255, 0.59);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.7px);
+-webkit-backdrop-filter: blur(7.7px); z-index: 1111;
+
+}
+
+nav.homeVaNav img{
+    width: 177px;
+    height: 50px;
+    border-radius: 7px;
+    margin: 0 10px;
+}
+
+nav.homeVaNav ul{
+    margin: 0 10px;
+    flex: 8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav.homeVaNav ul li{
+    margin: 0;
+    padding: 0;
+}
+
+nav.homeVaNav ul li a{
+width: 67px;
+height: 23px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+color: rgba(0, 0, 0, 0.55);
+}
+
+nav.homeVaNav ul li.active{
+    background: #6B2C57;
+    border-radius: 54% 73% 43% 14% ;
+padding: 15px;
+
+}
+
+nav.homeVaNav ul li:hover{
+    box-shadow:0 0 3px #6B2C57;
+    border-radius: 54% 73% 43% 14% ;
+padding: 15px;
+
+}
+
+
+nav.homeVaNav ul li.active > a{
+    color: #FFFFFF;
+}
+
+nav.homeVaNav .homeVaNavIII{
+    flex: 1;
+    margin: 0 10px;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.homeVaNav .homeVaNavIII > i{
+    color: rgba(0, 0, 0, 0.57);
+    font-size: 30px;
+}
+
+
+nav.homeVaNav .homeVaNavIII > i:hover{
+    color: rgba(0, 0, 0, 0.3);
+  
+}
+
+.menubar{
+    flex: 1;
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+
+.menubar > i{
+    color: rgba(0, 0, 0, 0.57);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/*    ....... SIDEBAR.......     */
+
+.sidebar{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 95vh;
+    position: fixed;
+    top: 0;
+
+    z-index: 1111;
+background: rgba(255, 255, 255, 0.77);
+border-radius:0 0 0 16px;
+backdrop-filter: blur(7px);
+-webkit-backdrop-filter: blur(7px);
+box-shadow: 0 0 7px rgba(0, 0, 0, 0.55);
+right: 0;
+}
+
+.sidebar > i{
+    align-self: flex-start;
+    width: 100%;
+    color: #6B2C57;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    left: 85%;
+}
+
+.sidebar .icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+width: 50%;
+margin: 15px;
+
+}
+
+.sidebar .icon i{
+    color: rgba(0, 0, 0, 0.57);
+    font-size: 30px;
+    
+}
+
+.sidebar .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+margin: 15px;
+}
+
+.sidebar .menu a{
+    margin: 15px;
+   align-self: flex-start;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+color: rgba(0, 0, 0, 0.55);
+}
+
+
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+   padding: 20px;
+   background-image: url('img/error.jpg');
+   background-color: #ffffff6e;
+   background-blend-mode: lighten;
+   background-size: contain;
+   background-position: center;
+
+}
+
+h1{
+    font-family: 'Square Peg';
+    font-weight: 900;
+    font-size: 200px;
+    margin: 15px;
+color: #2c1d27;
+}
+
+h2{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 70px;
+line-height: 85px;
+color: #6B2C57;
+margin: 15px;
+}
+
+button{
+margin: 15px;
+padding: 10px 25px;
+background-color: #6B2C57;
+border-radius: 15px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+color: #FFFFFF;
+border: none;
+}
+
+button:hover{
+    background-color: #6b2c5770;
+}
+
+
+/* 333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 */
+
+
+
+@media screen and (max-width: 960px) {
+    .menubar{
+        display: flex;
+    }
+
+    nav.homeVaNav ul{
+        display: none;
+    }
+
+  .sidebar.toggle{
+    display: flex;
+  }
+  
+.sidebar .icon{
+    display: none;
+}
+
+
+
+
+.sidebar div.menu a.active{
+    background: #6B2C57;
+    color: #FFFFFF;
+    width: 150px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+.sidebar div.menu a:hover{
+
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   box-shadow:0 0 3px #6B2C57;
+   border-radius: 7px;
+
+}
+
+
+.cont{
+    background-image: url('img/errordance.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+}
+
+
+
+
+
+/* 333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 */
+
+
+
+@media screen and (max-width: 480px) {
+
+    nav.homeVaNav div.homeVaNavIII i{
+        display: none;
+    }
+
+    .sidebar .icon{
+        display: flex;
+    }
+
+  .cont{
+    background-image: url('img/errortornado.jpg');
+    background-size: cover;
+
+  } 
+
+  h2{
+    font-size: 70px;
+  }
+
+}
