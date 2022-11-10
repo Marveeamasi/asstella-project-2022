@@ -8,11 +8,19 @@
     box-sizing: border-box;
 }
 
+button{
+    cursor: pointer;
+}
+
+input{
+    cursor: pointer;
+}
+
 body{
     margin:0;
     padding: 0;
     width: 100vw;
-   
+   overflow-x: hidden;
 }
 
 .homeVaCont{
@@ -21,13 +29,14 @@ body{
      width: 100vw;  
  position: relative;
  background: #FFFFFF;
- 
+ overflow-x: hidden;
  }
 
 
 
  section,header{
     margin-bottom: 100px;
+    overflow-x: hidden;
  }
 
 /*    ....... NAVBAR.......     */
@@ -35,6 +44,7 @@ body{
 
 
 nav.homeVaNav{
+    width: 100vw;
     margin:0;
     padding: 10px;
     display: flex;
@@ -51,12 +61,10 @@ backdrop-filter: blur(7.7px);
 }
 
 nav.homeVaNav img{
-    flex: 1;
-    width: 176px;
-    height: 24px;
-    
+    width: 177px;
+    height: 50px;
+    border-radius: 7px;
     margin: 0 10px;
-   
 }
 
 nav.homeVaNav ul{
@@ -86,6 +94,25 @@ line-height: 26px;
 color: rgba(0, 0, 0, 0.55);
 }
 
+nav.homeVaNav ul li.active{
+    background: #6B2C57;
+    border-radius: 54% 73% 43% 14% ;
+padding: 15px;
+
+}
+
+nav.homeVaNav ul li:hover{
+    box-shadow:0 0 3px #6B2C57;
+    border-radius: 54% 73% 43% 14% ;
+padding: 15px;
+
+}
+
+
+nav.homeVaNav ul li.active > a{
+    color: #FFFFFF;
+}
+
 nav.homeVaNav .homeVaNavIII{
     flex: 1;
     margin: 0 10px;
@@ -100,6 +127,12 @@ nav.homeVaNav .homeVaNavIII > i{
     font-size: 30px;
 }
 
+
+nav.homeVaNav .homeVaNavIII > i:hover{
+    color: rgba(0, 0, 0, 0.3);
+  
+}
+
 .menubar{
     flex: 1;
     margin: 0 10px;
@@ -111,6 +144,7 @@ nav.homeVaNav .homeVaNavIII > i{
 .menubar > i{
     color: rgba(0, 0, 0, 0.57);
     font-size: 30px;
+    cursor: pointer;
 }
 
 
@@ -138,7 +172,7 @@ right: 0;
 .sidebar > i{
     align-self: flex-start;
     width: 100%;
-    color: rgba(0, 0, 0, 0.57);
+    color: #6B2C57;
     font-size: 30px;
     position: absolute;
     top: 20px;
@@ -184,11 +218,12 @@ color: rgba(0, 0, 0, 0.55);
 
 
 
+
 /*    ....... HERO......     */
 
 
 header.homeVaHero{
-width: 100vw;
+width: 100%;
 height: 100%;
 background: linear-gradient(269.74deg, #4A1F3D 0.12%, #6B2C57 78.21%, #6B2C57 108.32%);
 background-blend-mode: darken;
@@ -197,10 +232,10 @@ justify-content: center;
 align-items: center;
 position: relative;
 flex-wrap: wrap;
-overflow-x: hidden;
 }
 
 .homeVaHeroI{
+    padding: 10px;
 flex: 1;
 display: flex;
 flex-direction: column;
@@ -210,29 +245,20 @@ align-items: flex-start;
 .homeVaHeroI h1{
     margin: 10px;
     flex: 1;
-
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 40px;
-line-height: 46px;
-
 color: #FFFFFF;
-
 }
 
 .homeVaHeroI h3{
     flex: 1;
-    width: 424px;
-height: 30px;
-
 margin: 10px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 25px;
-line-height: 29px;
-
 color: #FFFFFF;
 }
 
@@ -255,7 +281,7 @@ border-radius: 10px 0px 0px 10px;
 
 .input > i{
     color: #000000;
-    flex: 2;
+    flex: 1;
     font-size: 40px;
     margin: 10px;
 }
@@ -268,42 +294,32 @@ border: none;
 }
 
 .input input::placeholder{
-    width: 201px;
-height: 24px;
-
-
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 25px;
-line-height: 29px;
-
 color: #4A1F3D;
-
 }
 
 .inputBtn{
     width: 158px;
 height: 58px;
-
-
 background: #B7ABD3;
-
-
 border-radius: 0px 10px 10px 0px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 25px;
-line-height: 29px;
 border: none;
 color: #FFFFFF;
+}
 
+.inputBtn:hover{
+  border:2px solid #B7ABD3;
+  background-color: transparent;
 }
 
 .homeVaHeroI > button{
-width: 314px;
-height: 58px;
 border: none;
 background: #000000;
 border-radius: 15px;
@@ -314,10 +330,13 @@ font-size: 30px;
 line-height: 36px;
 color: #FFFFFF;
 margin: 10px;
-opacity: .8;
+opacity: .9;
+padding: 15px 50px;
 }
 
-
+.homeVaHeroI>button:hover{
+    background: #0000009a;
+}
 
 .homeVaHeroIICont{
     flex: 1;
@@ -344,10 +363,7 @@ background: linear-gradient(269.74deg, #4A1F3D 0.12%, #6B2C57 78.21%, #6B2C57 10
 }
 
 .homeVaHeroIII{
-    
     position: absolute;
-    width: 320px;
-    height: 58px;
   bottom: 20px;
     border: none;
     background: #000000;
@@ -356,12 +372,13 @@ background: linear-gradient(269.74deg, #4A1F3D 0.12%, #6B2C57 78.21%, #6B2C57 10
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
-line-height: 36px;
-
 color: #FFFFFF;
-
+padding: 15px 30px;
 }
 
+.homeVaHeroIII:hover{
+    background: #0000009a;
+}
 
 
 
@@ -481,21 +498,21 @@ section.homeVaBrief button{
 height: 58px;
 background: #FFFFFF;
 border: 1px solid #000000;
-
 font-family: 'Lato';
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
 line-height: 36px;
-
 margin: 10px;
-
 color: #6B2C57;
-
-
-
 }
 
+section.homeVaBrief button:hover{
+    background-color: #0000004d;
+    color: #ffffff;
+    border: none;
+
+}
 
 /*   .......... LEARN MORE ..............*/
 
@@ -516,59 +533,42 @@ display: flex;
 flex-direction: column;
 flex: 1;
 align-items: flex-start;
+padding: 10px;
 
 }
 
 section.homeVaLearnmore .I h3{
-
-
 font-family: 'Lato';
 font-style: normal;
 font-weight: 400;
 font-size: 22px;
-
-
 color: #FFFFFF;
 margin: 10px;
-
 }
 
 section.homeVaLearnmore .I h1{
- 
-  
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
-    
-
     margin: 10px;
-    
     color: #FFFFFF;
-    
 }
 
 section.homeVaLearnmore .I p{
-  
-    
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
     line-height: 40px;
-  
-    margin: 10px 30px 10px 10px;
-    
+    margin: 10px;
     color: #FFFFFF;
-    
-    
+    padding: 10px;
 }
 
 section.homeVaLearnmore .I button{
     width: 314px;
     height: 58px;
-   
-    
     background: #000000;
     font-family: 'Lato';
 font-style: normal;
@@ -579,7 +579,10 @@ border-radius: 10px;
 border: none;
 margin: 10px;
 color: #FFFFFF;
-    
+}
+
+section.homeVaLearnmore .I button:hover{
+    background: #000000b2;
 }
 
 section.homeVaLearnmore .II{
@@ -762,6 +765,10 @@ color: #FFFFFF;
 
 }
 
+section.homeVaWeoffer .II button:hover{
+    background-color: #6b2c57a1;
+}
+
 
 /*   .......... TESTIMONIALS ..............*/
 
@@ -773,6 +780,7 @@ section.homeVaTestimonials{
     height: 100%;
     justify-content: center;
     align-items: center;
+    
    
     
 }
@@ -1110,6 +1118,8 @@ color: #6B2C57;
 
 }
 
+
+
 section.plans h1{
     font-family: 'Roboto';
 font-style: normal;
@@ -1142,6 +1152,12 @@ background: rgba(183, 171, 211, 0.37);
 box-shadow: 0px 4px 5px #B7ABD3;
 border-radius: 10px;
 margin: 10px;
+}
+
+
+section.plans .I .a:hover{
+    background: #6B2C57;
+    box-shadow: 0px 0px 10px #B7ABD3;
 }
 
 section.plans .I .a h1{
@@ -1248,19 +1264,50 @@ text-align: center;
 margin: 10px;
 color: rgba(0, 0, 0, 0.57);
 
-
 }
 
+
+    
+section.plans .I .a:hover h1{
+    color: #fff;
+}
+    
+section.plans .I .a:hover p{
+    color: #fff;
+}
+    
+section.plans .I .a:hover .b{
+    color: #fff;
+}
+    
+section.plans .I .a:hover .c{
+    color: #fff;
+}
+    
+section.plans .I .a:hover button{
+ background: rgba(183, 171, 211, 0.37) ;
+    color:#000000;
+}
+    
+section.plans  .I .a:hover button:hover{
+        color: #fff;
+}
+    
+section.plans  .a:hover .pCont >i{
+    color: #fff;
+}
+    
+section.plans .I .a:hover p.popular{
+    color:rgba(183, 171, 211, 0.37)  ;
+}
 
 /*   .......... CONTACT US..............*/
 
 .contactus{
 display: flex;
-
 align-items: flex-start;
 width: 100vw;
 flex-direction: column;
-
 }
 
 .contactus h3{
@@ -1275,41 +1322,30 @@ color: #B7ABD3;
 }
 
 .contactus h1{
-    width: 440px;
-height: 130px;
 margin: 10px;
-
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 40px;
-line-height: 46px;
-
 color: #B7ABD3;
-
+width: 30%;
 }
 
 .contactus h1 span{
-    width: 440px;
-height: 130px;
-
-
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 40px;
 line-height: 46px;
-
 color: #6B2C57;
-
 }
 
 .contactus form{
+    width: 100%;
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -1319,7 +1355,6 @@ color: #6B2C57;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 10px;
 }
 
 .contactus form .inputsCont .inputCont{
@@ -1329,6 +1364,7 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 margin: 10px;
+padding: 10px;
 background: rgba(183, 171, 211, 0.53);
 }
 
@@ -1348,8 +1384,6 @@ background: rgba(183, 171, 211, 0.53);
 }
 
 .contactus form .inputsCont .inputCont input::placeholder{
-    width: 182px;
-height: 27.04px;
 
 font-family: 'Roboto';
 font-style: normal;
@@ -1408,6 +1442,11 @@ border: none;
 border-radius: 7px;
 margin: 10px;
 }
+
+.contactus form button:hover{
+background-color: #6b2c579c;
+}
+
 
 /*   .......... FOOTER ..............*/
 
@@ -1476,7 +1515,7 @@ footer p{
     font-family: 'Square Peg';
 font-style: normal;
 font-weight: 400;
-font-size: 15px;
+font-size: 25px;
 line-height: 18px;
 margin: 10px;
 color: #FFFFFF;
@@ -1503,6 +1542,31 @@ color: #FFFFFF;
   
 .sidebar .icon{
     display: none;
+}
+
+
+
+.sidebar div.menu a.active{
+    background: #6B2C57;
+    color: #FFFFFF;
+    width: 150px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.sidebar div.menu a:hover{
+
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   box-shadow:0 0 3px #6B2C57;
+   border-radius: 7px;
+
 }
 
 
@@ -1561,28 +1625,28 @@ header.homeVaHero{
     
     .input i.fa-solid.fa-magnifying-glass{
         font-size: 20px;
+        flex: 0.5;
+        cursor: pointer;
+    }
+
+    .input i.fa-solid.fa-magnifying-glass:hover{
+        font-size: 23px;
     }
     
     .input input{
         width: 100%;
-    flex: 6;
+    flex: 10;
     height: 100%;
     padding:10px;
     border: none;
+    text-align: center;
     }
     
     .input input::placeholder{
-      
-    
-    
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
- 
-    
     color: #4A1F3D;
-    
+    font-size: 15px;
     }
     
     .inputBtn{
@@ -1590,22 +1654,7 @@ header.homeVaHero{
     
     }
     
-    .homeVaHeroI > button{
-    width: 250px;
-    height: 50px;
-    border: none;
-    background: #000000;
-    border-radius: 15px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    
-    color: #FFFFFF;
-    margin: 10px;
-    opacity: .8;
-    }
-    
+ 
     
     
     .homeVaHeroIICont{
@@ -1632,24 +1681,45 @@ header.homeVaHero{
         opacity: 0.5;
     }
     
-    .homeVaHeroIII{
-        
-        
-        width: 300px;
-        height: 50px;
 
-    font-size: 30px;
-    
-    }
 
     section.homeVaLearnmore{
         flex-direction: column;
+     
     }
 
+
+  section.homeVaLearnmore>.I{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
     section.homeVaTestimonials{
         flex-wrap: wrap;
     }
+
+    section.homeVaTestimonials .i .b{
+        width: 100vw;
+    }
+
+    section.homeVaTestimonials .i .b > img{
+        width: 100%;
+    }
+
+    section.homeVaTestimonials .i .b> .imgCov{
+        width: 100%;
+    }
+
+    section.homeVaTestimonials .i .b>.textCov{
+        width: 100%;
+    }
+
+    section.homeVaTestimonials .i > img.a ,  section.homeVaTestimonials .i > img.b{
+        width: 100%;
+    }
+
 
 .howitworks{
     flex-direction: column;
@@ -1670,167 +1740,33 @@ margin-bottom: 10px;
     box-shadow: none;
 }
 
+.howitworks .cont > img{
+    width: 100%;
+}
 
 .plans p.note{
     width: 100%;
     height: 100%;
 }
 
-
-.contactus{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    flex-direction: column;
-    height: 100%;
-    }
-    
-    .contactus h3{
-        font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 29px;
-    margin: 10px;
-    color: #B7ABD3;
-    
-    }
-    
-    .contactus h1{
+.contactus form .inputsCont{
     width: 100%;
-    height: 100%;
-    margin: 10px;
-    
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 46px;
-    
-    color: #B7ABD3;
-    
-    }
-    
-    .contactus h1 span{
-   width: 100%;
-   height: 100%;
-    
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 46px;
-    
-    color: #6B2C57;
-    
-    }
-    
-    .contactus form{
-        margin: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    .contactus form .inputsCont{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 10px;
+}
 
-    }
-    
-    .contactus form .inputsCont .inputCont{
-        width: 200px;
-    height: 59px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 10px;
-    background: rgba(183, 171, 211, 0.53);
-    }
-    
-    .contactus form .inputsCont .inputCont i{
-        color: rgba(0, 0, 0, 0.57);
-        font-size: 30px;
-        margin: 10px;
-        flex: 1;
-    }
-    
-    .contactus form .inputsCont .inputCont > input{
-        border: none;
-        background: transparent;
-        flex: 3;
-        padding: 10px;
-        margin: 10px;
-    }
-    
-    .contactus form .inputsCont .inputCont input::placeholder{
-    height: 100%;
+.contactus form .inputsCont .inputCont.flexii{
+width: 380px;
+}
+
+section.contactus>h1{
     width: 100%;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 25px;
-    
-    color: rgba(0, 0, 0, 0.57);
-    
-    
-    }
-    
-    .contactus form .inputsCont .inputCont.flexii{
-        width: 200px;
-    }
-    
-    .contactus form .checkCont{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-self: flex-start;
-    margin: 10px;
-    }
-    
-    .contactus form .checkCont input{
-        border: 2px solid #000000;
-        margin: 10px;
-    }
-    
-    .contactus form .checkCont h4{
-        font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 25px;
-    margin: 10px;
-    color: #000000;
-    
-    }
-    
-    .contactus form button{
-        width: 200px;
-    height: 58px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
-    color: #FFFFFF;
-    background: #6B2C57;
-    border: none;
-    border-radius: 7px;
-    margin: 10px;
-    }
-    
+}
+
 
 
 
 }
+
+
 
 
 /* 333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 */
@@ -1838,7 +1774,6 @@ margin-bottom: 10px;
 
 
 @media screen and (max-width: 480px) {
-
     nav.homeVaNav div.homeVaNavIII i{
         display: none;
     }
@@ -1846,6 +1781,7 @@ margin-bottom: 10px;
     .sidebar .icon{
         display: flex;
     }
+
 
 
     section.homeVaLearnmore .I{
