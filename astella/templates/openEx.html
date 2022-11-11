@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>asstella open vacancy page Ext</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel='stylesheet'  href='openEx.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+ </head>
+ <body>
+    <div class="homeVaCont">
+        <nav class="homeVaNav">
+            <img class="homeVaNavI" src="img/whiteLogo.jpg" alt="logo">
+            <ul class="homeVaNavII">
+                <li><a href="">Home</a></li>
+                <li  ><a href="">Dashboard</a></li>
+                <li ><a href="">Tasks</a></li>
+                <li ><a href="">Plans</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+            <div class="homeVaNavIII">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+ 
+            <div class="menubar">
+                <i class="fa-solid fa-bars" onclick="toggle()"></i>
+            </div>
+ 
+        </nav>
+ 
+         <div class="sidebar ">
+            <i class="fa-solid fa-x" onclick="toggle()"></i>
+            <div class="icon">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="menu">
+                <a href="">Home</a>
+                <a  href="">Dashboard</a>
+                <a href="" >Tasks</a>
+                <a href="">Plans</a>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+            </div>
+         </div>
+
+         <div class="cont">
+            <div class="a">
+                <img class="bg" src="img/img3.jpg" alt="image">
+                <div class="imgCov"></div>
+        
+    
+            </div>
+            <center class="b">
+                <h1>OPEN VACANCY</h1>
+                <form action="">
+                    <div class="inputConts">
+                        <div class="text">Contract Length</div>
+                        <input type="text" placeholder="TBD if you’re unsure*">
+                        <div class="text">Primary Responsibilities</div>
+                        <input type="text" >
+                        <div class="text">No of Hours Required<i> per day*</i> </div>
+                        <input type="number">
+                        <div class="text">Wage budget<i> per week*</i></div>
+                        <input type="number" id="wages" placeholder="First payment to be withdrawn by the company beforehand at month start ">
+                        <div class="text">Preferred Communication Channel*</div>
+                        <input type="text">
+                        <div class="text">Number Of VA’s Needed*</div>
+                        <input type="number">
+                        <div class="text">Number Of VA’s Applications*</div>
+                        <input type="number">
+                        
+                    </div>
+                    <button>SUBMIT</button>
+                </form>
+    
+    
+            </center>
+    
+    </div>
+    <script>
+        var sidebar = document.querySelector(".sidebar");
+ 
+ function toggle() {
+   let x = sidebar.classList;
+   x.toggle("toggle");
+ }
+ 
+    </script>
+</body>
+</html>
