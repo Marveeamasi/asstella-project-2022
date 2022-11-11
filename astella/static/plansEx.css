@@ -40,7 +40,7 @@ nav.homeVaNav{
     position: sticky;
     top: 0;
     z-index: 11;
-background: rgba(255, 255, 255, 0.59);
+background: #6B2C57;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(7.7px);
 -webkit-backdrop-filter: blur(7.7px); z-index: 1111;
@@ -297,6 +297,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 40px;
 color: #000000;
+margin: 10px;
 }
 
 
